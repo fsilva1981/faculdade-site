@@ -3,10 +3,10 @@
 
 :root {
     --cor-primaria: #26628C;
-    --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fd;
-    --cor-hover: #272727;
-    --cor-campo: #80CFDB;
+    --cor-secundaria: #121021;
+    --cor-terciaria: #c9edf5;
+    --cor-hover: #726d6d;
+    --cor-campo: #9eb9bd;
     --cor-fundo-texto: #BAD4D9;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .apresentacao {
-    padding: 10% 15%;
+    padding: 2% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,6 +189,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
+   
 
     
 }
@@ -197,6 +198,7 @@ button {
 
     font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
+   
 }
 
 .grupo:before,
@@ -212,12 +214,13 @@ button {
 
 .campo {
     margin-bottom: 1em;
+   
 }
 
 
 .campo label {
     margin-bottom: 0.2em;
-    color: var(--cor-fundo-texto);
+    color: var(--cor-secundaria);
     display: block;
 }
 
@@ -225,6 +228,7 @@ button {
 fieldset.grupo .campo {
     float: left;
     margin-right: 1em;
+   
 }
 
 
@@ -300,3 +304,93 @@ select {
         }
 
 }
+
+.tela__inicial {
+
+    position: absolute;
+    left: 42%;
+    top: 20%;
+    }
+    
+
+.nome {
+
+position: absolute;
+left: 42%;
+top: 20%;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-primaria);
+}
+
+.input {
+    color: var(--cor-primaria);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+
+}
+
+.btn1 {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: #1176d4;
+    border-radius: 6px;
+    height: 50px;
+    width: 215px;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    color: #22d4fd;
+    opacity: 0.8;
+    height: 55px;
+    width: 55px;
+    width: 220px;
+    transition: 0.5s;
+    
+
+}
+
+
+
+
+ .botao_logar {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: #1176d4;
+    border-radius: 6px;
+    height: 50px;
+    width: 210px;
+    display: block;
+    margin: 5%;
+    left: 10%;
+    top: 10%;
+
+    
+}
+
+
+.menu__tela__inicial {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    padding: 2% 0% 0% 0%;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+

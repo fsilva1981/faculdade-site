@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="tela-inicial.html">
+                <h1 class="menu__tela__inicial">
+                    SISTEMA DE AVALIACAO DE PERFOMANCE
+                </h1>
+            </a>
+            <a class="cabecalho__menu__link" href="formulario.html"></a>
+            <a class="cabecalho__menu__link" href="index.html"></a>
+            <a class="cabecalho__menu__link" href="about.html"></a>
+            <a class="cabecalho__menu__link" href="pesquisa.html"></a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="config.php" method="POST">
+            <div class="nome">
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="CPF" placeholder="Digite seu CPF" class="input" required><br><br>
+        
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" class="input" required><br><br>
+        
+                <button type="submit" name="cadastrar" class="botao_logar" formaction="index.html">Login</button>
+                <button type="submit" name="cadastrar" class="botao_logar" formaction="formulario.html">Fazer Cadastro</button>
+               
+                
+            </div>
+        </form>
+        
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio do formulário
+        
+                // Obtém o valor do botão clicado
+                var botaoClicado = event.explicitOriginalTarget || document.activeElement;
+        
+                // Obtém o valor do atributo "formaction" do botão clicado
+                var destino = botaoClicado.getAttribute('formaction');
+        
+                // Redireciona para a página definida no atributo "formaction" do botão clicado
+                window.location.href = destino;
+            });
+        </script>
+    </main>
+</body>
+
+</html>
